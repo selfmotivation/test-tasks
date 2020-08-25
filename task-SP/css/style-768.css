@@ -1,0 +1,196 @@
+@media screen and (min-width: 768px) {
+  .header {
+    margin: 40px auto 30px;
+  }
+  .header__socio-list {
+    width: 20vw;
+  }
+  .header__socio-list a {
+    width: 30px;
+    height: 30px;
+  }
+  .header__row:last-child {
+    margin-top: 8px;
+  }
+
+  .work-time__first-row, .contacts__first-row {
+    font-size: 11px;
+    margin-bottom: 8px;
+  }
+  .work-time__second-row, .contacts__second-row {
+    font-size: 16px;
+  }
+
+  .promo {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .promo__logo-img {
+    width: 56%;
+  }
+  .promo__description {
+    width: 445px;
+    margin: 15px auto 55px;
+    font-size: 11px;
+    line-height: 13px;
+  }
+
+  .main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .main__nav {
+    display: flex;
+    justify-content: center;
+    width: 41%;
+    height: 35vw;
+    padding: 10px 0;
+    background-color: rgba(226, 226, 226, 0.5);
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  .main__nav .nav-list {
+    justify-content: space-around;
+    font-size: 2vw;
+    transform: translate(30%);
+  }
+  .main__nav .nav-list__item {
+    padding: 5px 8px;
+  }
+
+  .feedback-container {
+    width: 41%;
+    background-color: #fff;
+  }
+  .feedback-container__form {
+    padding: 0 40px 0 0;
+  }
+
+  .title {
+    font-size: 30px;
+    line-height: 37px;
+  }
+  .title::after {
+    width: 121px;
+    height: 8px;
+    top: 45px;
+  }
+
+  .text {
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .about-us {
+    margin-top: 100px;
+    flex-direction: column;
+    width: 100%;
+    height: 100vw;
+  }
+  .about-us__paragraph {
+    background-color: rgba(226, 226, 226, 0.5);
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+    width: 51vw;
+    height: 31vw;
+    position: relative;
+    left: -30px;
+    padding: 12px 12px 12px 30px;
+  }
+  .about-us__title {
+    margin-top: 0;
+  }
+  .about-us__text {
+    margin: 37px 0 15px 0;
+    line-height: 2.5vw;
+    font-size: 1.5vw;
+  }
+  .about-us__image {
+    width: 43vw;
+    height: auto;
+  }
+  .about-us__image:last-child {
+    flex: 0 0 auto;
+    margin-top: 0;
+  }
+
+  .services {
+    width: 100%;
+  }
+  .services__title {
+    margin-top: 91px;
+  }
+  .services__list {
+    margin: 75px 20px 131px;
+  }
+  .services__list-bg {
+    max-width: none;
+  }
+  .services__list-item {
+    font-size: 17px;
+    margin-bottom: 19px;
+  }
+  .services__list-item-name, .services__list-item-price {
+    background: linear-gradient(rgba(255, 255, 255, 0) 80%, white 80%, white 100%);
+  }
+  .services__list-item::after {
+    border-bottom: 2px dotted #777;
+    bottom: 0;
+  }
+
+  .footer {
+    padding: 40px 0;
+  }
+  .footer__info {
+    width: 52%;
+    height: 140px;
+    font-size: 12px;
+    justify-content: space-around;
+  }
+  .footer__logo {
+    display: none;
+  }
+  .footer__socio-list {
+    order: 4;
+  }
+  .footer .submit-button {
+    order: 3;
+    width: 27vw;
+    height: 27px;
+    flex: 0 0 auto;
+    margin: 0 9vw 0 0;
+    font-size: 12px;
+  }
+  .footer .work-time__first-row, .footer .contacts__first-row {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  .footer__nav {
+    align-self: flex-start;
+  }
+  .footer__nav-list {
+    height: 100%;
+  }
+  .footer .nav-list__item {
+    padding: 3px 5px;
+  }
+  .footer .wrapper {
+    flex-direction: row-reverse;
+  }
+
+  .map {
+    width: 48%;
+    height: 154px;
+    border-radius: 8px;
+    border: 1px solid #000;
+  }
+
+  .wrapper {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}

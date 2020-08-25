@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,500;1,400&display=swap');
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+p {
+	color: #000;
+}
+
+body {
+	font-family: Montserrat, sans-serif;
+}
+
+@mixin active_button {
+	color: #fff;
+	background-color: #000;
+	border-radius: 8px;
+}
+
+.socio-list {
+	display: flex;
+	justify-content: space-between;
+	a {
+		width: 30px;
+		height: 30px;
+		display: block;
+	}
+}
+
+// Header
+
+.nav-list {
+	display: flex;
+   	flex-direction: column;
+   	justify-content: space-between;
+   	height: 100%;
+   	&__item {
+   		padding: 3px 5px;
+   		transition: 0.3s ease-in-out;
+   		&:hover {
+			@include active_button;
+		}
+		a {
+			display: block;
+			transition: 0.3s ease-in-out;
+		}
+		&:hover a {
+			color: #fff;
+		}
+   	}
+}
+.header {
+	margin: 22px 0 36px;
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		font-weight: 500;
+		letter-spacing: 0.05em;
+		&:last-child {
+			margin-top: 16px;
+		}
+	}
+	&__logo {
+		width: 16.9vw;
+		height: 7.5vw;
+	}
+	&__socio-list {
+		width: 15.6vw;
+		& a {
+			width: 3.2vw;
+    		max-width: 30px;
+    		height: 3.2vw;
+		}
+	}
+	&__nav {
+		display: none;
+	}
+	&__contacts {
+		text-align: right;
+	}
+}
+
+.logo {
+	display: block;
+	&-img {
+		width: 100%;
+	}
+}
+
+.fb {
+	background: url("../img/fb.png") 50% 50% / contain no-repeat;
+}
+
+.vk {
+	background: url(../img/vk.png) 50% 50% / contain no-repeat;
+}
+
+.insta {
+	background: url(../img/insta.png) 50% 50% / contain no-repeat;
+}
+
+.work-time, .contacts {
+	&__first-row {
+		font-size: 6px;
+		margin-bottom: 4px;
+	}
+	&__second-row {
+		font-size: 9px;
+	}
+}
+
+.slogan {
+
+}
+
+.contacts {
+
+}
+
+// Main page
+
+.main {
+	
+}
+
+.promo {
+	display: flex;
+	flex-wrap: wrap;
+	// flex-direction: column;
+	&__logo-img {
+		width: 88%;
+		height: 100%;
+		max-width: 699px;
+    	margin: 0 auto
+	}
+	&__description {
+		text-align: center;
+		width: 250px;
+		margin: 14px auto 19px;
+		font-size: 9px;
+		line-height: 11px;
+	}
+}
+
+// Main navigation
+
+.main__nav {
+	display: none;
+	
+}
+
+// Feedback form
+
+.feedback-container {
+	background-color: rgba(226, 226, 226, 0.5);
+	width: 100%;
+	&__form {
+		padding: 20px calc(55px - 4.6vw);
+	}
+}
+
+.feedback-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	&__title {
+		font-size: 13px;
+		line-height: 16px;
+	}
+	&__input {
+		width: 100%;
+		max-width: 311px;
+		font-size: 10px;
+		margin: 15px 0 0 0;
+		text-align: left;
+		&-label {
+			margin: 0 0 5px 0;
+			display: block;
+		}
+		&:last-of-type {
+			margin-bottom: 7px;
+		}
+		&:last-of-type &-label {
+			font-size: 6px;
+			display: flex;
+		}
+		&-field {
+			border-radius: 8px;
+			border: 1px solid #000;
+			padding: 0 10px;
+			width: 100%;
+			height: 27px;
+		}
+	}
+}
+
+.submit-button {
+	font-size: 13px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	max-width: 311px;
+	padding: 0 10px;
+	@include active_button;
+}
+
+// Checkbox
+
+.feedback-form__input-field_agreement {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	&+label::before {
+		content: '';
+		opacity: 1;
+		flex-shrink: 0;
+		border: 2px solid #000;
+		width: 20px;
+		height: 20px;
+		border-radius: 5px;
+		margin-right: 11px;
+		transition: .2s ease-in-out;
+	}
+	&:checked {
+		+label::after {
+			content: '';
+			display: block;
+			position: absolute;
+			width: 11px;
+			height: 7px;
+			border-bottom: 3px solid #fff;
+			border-left: 3px solid #fff;
+			transform: rotate(-45deg) translate(0px, 7px);
+		}
+		+label::before {
+			background-color: #000;
+		}
+	}
+}
+
+// About us
+
+.title {
+	font-size: 20px;
+	line-height: 24px;
+	font-weight: 200;
+	letter-spacing: 0.05em;
+	position: relative;
+	&::after {
+		content: '';
+		position: absolute;
+		display: block;
+		top: 27px;
+		width: 83px;
+		height: 5px;
+		background-color: #000;
+	}
+}
+
+.text {
+	font-size: 7px;
+	line-height: 12px;
+	font-weight: 300;
+	letter-spacing: 0.05em;
+}
+
+.about-us {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	&__paragraph {
+		display: block;
+		width: 100%;
+	}
+	&__title {
+		margin-top: 28px;
+	}
+	&__text {
+		margin: 22px 0;
+	}
+	&__image {
+		width: 42%;
+		height: 100%;
+		border-radius: 8px;
+		box-shadow:(0px 4px 4px rgba(0, 0, 0, 0.25));
+		&:last-child {
+			flex: 0 0 100%;
+			margin-top: 44px;
+		}
+	}
+}
+
+// Services
+
+.services {
+	&__title {
+		margin-top: 28px;
+		text-align: right;
+		&::after {
+			right: 0;
+		}
+	}
+	&__list {
+		position: relative;
+		margin: 35px 0 65px;
+		&-bg {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			margin: auto;
+			z-index: -1;
+			opacity: 0.05;
+			width: 100%;
+			max-width: 300px;
+		}
+		&-item {
+			display: flex;
+			justify-content: space-between;
+			position: relative;
+			font-size: 7px;
+			font-weight: 500;
+			line-height: 12px;
+			letter-spacing: 0.05em;
+			margin: 0 13px;
+			&-name,&-price {
+				background: linear-gradient(rgba(255,255,255, 0) 55%,rgba(255,255,255, 1) 55%, rgba(255,255,255, 1) 55%, rgba(255,255,255, 0) 100%);
+			}
+			&::after {
+				content: '';
+				position: absolute;
+				bottom: 4px;
+				border-bottom: 1px dotted #aaa;
+				width: 100%;
+				z-index: -1;
+			}
+		}
+	}
+}
+
+// Footer
+
+.footer {
+	padding: 15px 0;
+	.wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	background-color: rgba(226, 226, 226, 0.5);
+	&__map {
+		margin: 0 auto 26px;
+		order: 1;
+	}
+	&__info {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		align-items: flex-start;
+    	justify-content: space-between;
+    	margin: 0 0 19px;
+    	width: 68%;
+    	height: 70px;
+    	letter-spacing: 0.05em;
+    	font-size: 7px;
+    	order: 2;
+	}
+	.work-time, .contacts {
+		&__first-row {
+			margin-bottom: 8px;
+			font-size: 7px;
+		}
+	}
+	&__logo {
+		width: 16.9vw;
+		height: 7.5vw;
+		order: 4;
+	}
+	&__nav {
+		height: 100%;
+		justify-content: space-between;
+		align-self: flex-end;
+		&-list {
+			height: 69px;
+    		margin-top: -2px;
+		}
+	}
+	.submit-button {
+		flex: 0 0 50%;
+		font-size: 11px;
+		font-weight: 500;
+		height: 23px;
+		order: 5;
+	}
+	&__socio-list {
+		width: 20.6vw;
+		order: 3;
+		& a {
+			width: 4.2vw;
+    		max-width: 30px;
+    		height: 4.2vw;
+		}
+	}
+}
+
+.map {
+	width: 100%;
+	height: 108px;
+	border-radius: 8px;
+	border: 1px solid #000;
+}
+
+.wrapper {
+	margin-left: 4.6vw;
+	margin-right: 4.6vw;
+}

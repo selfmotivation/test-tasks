@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style-320.css">
+    <link rel="stylesheet" href="css/style-768.css">
+    <link rel="stylesheet" href="css/style-1024.css">
+    <title>BarberShop</title>
+  </head>
+</html>
+<body>
+  <header class="header wrapper">
+    <div class="header__row"><a class="header__logo logo" href="/"><img class="logo-img" src="img/logo.png" alt="BarberShop"></a>
+      <nav class="header__nav nav">
+        <ul class="nav-list">
+          <li class="nav-list__item"> <a href="#">О нас</a></li>
+          <li class="nav-list__item"> <a href="#">Услуги и цены</a></li>
+          <li class="nav-list__item"> <a href="#">Барберы</a></li>
+          <li class="nav-list__item"> <a href="#">Наши работы</a></li>
+          <li class="nav-list__item"> <a href="#">Отзывы</a></li>
+        </ul>
+      </nav>
+      <ul class="header__socio-list socio-list">
+        <li class="socio-list__item"><a class="fb" href="#"></a></li>
+        <li class="socio-list__item"><a class="vk" href="#"></a></li>
+        <li class="socio-list__item"><a class="insta" href="#"></a></li>
+      </ul>
+    </div>
+    <div class="header__row">
+      <div class="work-time">
+        <p class="work-time__first-row">График работы</p>
+        <p class="work-time__second-row">С 10:00 до 22:00</p>
+      </div>
+      <div class="slogan work-time__first-row">Нет ничего невозможного</div>
+      <div class="header__contacts contacts">
+        <p class="contacts__first-row">Ул.Декабристов, 54</p>
+        <p class="contacts__second-row">8 921 38 44 888</p>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="promo wrapper"><img class="logo-img promo__logo-img" src="img/logo.png" alt="Barber Shop">
+      <p class="promo__description">Наши мастера всегда помогут подобрать и сделать именно ту стрижку, которая подчеркнет твою индивидуальность.</p>
+    </div>
+    <nav class="main__nav nav">
+      <ul class="nav-list">
+        <li class="nav-list__item"> <a href="#">О нас</a></li>
+        <li class="nav-list__item"> <a href="#">Услуги и цены</a></li>
+        <li class="nav-list__item"> <a href="#">Барберы</a></li>
+        <li class="nav-list__item"> <a href="#">Наши работы</a></li>
+        <li class="nav-list__item"> <a href="#">Отзывы</a></li>
+      </ul>
+    </nav>
+    <form class="feedback-container" action="#">
+      <div class="feedback-container__form feedback-form wrapper">
+        <p class="feedback-form__title">Оставьте свои данные для обратного звонка</p>
+        <p class="feedback-form__input">
+          <label class="feedback-form__input-label" for="feedback-form__input-field_name">Ваше имя</label>
+          <input class="feedback-form__input-field" type="text" name="name" id="feedback-form__input-field_name">
+        </p>
+        <p class="feedback-form__input">
+          <label class="feedback-form__input-label" for="feedback-form__input-field_tel">Ваш телефон</label>
+          <input class="feedback-form__input-field" type="tel" name="tel" id="feedback-form__input-field_tel">
+        </p>
+        <p class="feedback-form__input">
+          <input class="feedback-form__input-field_agreement" type="checkbox" name="agreement" id="feedback-form__input-field_agreement">
+          <label class="feedback-form__input-label" for="feedback-form__input-field_agreement">Я соглашаюсь на передачу персональных данных согласно политике конфиденциальности.</label>
+        </p>
+        <button class="feedback-form__input-field feedback-form__submit-button submit-button" type="submit">Записаться</button>
+      </div>
+    </form>
+    <section class="about-us wrapper">
+      <article class="about-us__paragraph">
+        <h2 class="about-us__title title">О нас</h2>
+        <p class="about-us__text text">Мы ничего не копировали и не стремились ворваться в тренд.<br>Мы искренне и увлеченно несли культуру западных барбершопов <br>сперва в Москву, а затем и по всей стране.<br>Рисковали, создавали и экспериментировали,<br>год от года строя сильнейшую команду барберов.</p>
+      </article><img class="about-us__image" src="img/about-img-1.jpg" alt="BarberShop"><img class="about-us__image" src="img/about-img-2.jpg" alt="BarberShop"><img class="about-us__image" src="img/about-img-3.jpg" alt="BarberShop">
+    </section>
+    <section class="services wrapper">
+      <h2 class="services__title title">Услуги и цены</h2>
+      <ul class="services__list"><img class="services__list-bg" src="img/logo.png" alt="">
+        <li class="services__list-item"><span class="services__list-item-name">Стрижка</span><span class="services__list-item-price">1700 Р</span></li>
+        <li class="services__list-item"><span class="services__list-item-name">Стрижка машинкой</span><span class="services__list-item-price">600 Р</span></li>
+        <li class="services__list-item"><span class="services__list-item-name">Фейд</span><span class="services__list-item-price">1000 Р</span></li>
+        <li class="services__list-item"><span class="services__list-item-name">Стрижка бороды</span><span class="services__list-item-price">600 Р</span></li>
+        <li class="services__list-item"><span class="services__list-item-name">Моделирование бороды</span><span class="services__list-item-price">900 Р</span></li>
+        <li class="services__list-item"><span class="services__list-item-name">Королевское бритьё</span><span class="services__list-item-price">1300 Р</span></li>
+        <li class="services__list-item"><span class="services__list-item-name">Тонирование бороды</span><span class="services__list-item-price">700 Р</span></li>
+        <li class="services__list-item"><span class="services__list-item-name">Тонирование седины</span><span class="services__list-item-price">1300 Р</span></li>
+        <li class="services__list-item"><span class="services__list-item-name">Удаление волос воском</span><span class="services__list-item-price">300 Р</span></li>
+      </ul>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="wrapper">
+      <iframe class="footer__map map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1999.4845455172656!2d30.2840026162198!3d59.924101570233184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469630e699eb1287%3A0x439b72003f98cb2a!2z0YPQuy4g0JTQtdC60LDQsdGA0LjRgdGC0L7QsiwgNTQsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTAxMjE!5e0!3m2!1sru!2sru!4v1596751410403!5m2!1sru!2sru" tabindex="0"></iframe>
+      <div class="footer__info">
+        <div class="footer__work-time work-time">
+          <p class="work-time__first-row">График работы</p>
+          <p class="work-time__second-row">С 10:00 до 22:00</p>
+        </div>
+        <div class="footer__contacts contacts">
+          <p class="contacts__first-row">Ул.Декабристов, 54</p>
+          <p class="contacts__second-row">8 921 38 44 888</p>
+        </div>
+        <nav class="footer__nav nav">
+          <ul class="footer__nav-list nav-list">
+            <li class="nav-list__item"> <a href="#">О нас</a></li>
+            <li class="nav-list__item"> <a href="#">Услуги и цены</a></li>
+            <li class="nav-list__item"> <a href="#">Барберы</a></li>
+            <li class="nav-list__item"> <a href="#">Наши работы</a></li>
+            <li class="nav-list__item"> <a href="#">Отзывы</a></li>
+          </ul>
+        </nav>
+      </div>
+      <ul class="footer__socio-list socio-list">
+        <li class="socio-list__item"><a class="fb" href="#"></a></li>
+        <li class="socio-list__item"><a class="vk" href="#"></a></li>
+        <li class="socio-list__item"><a class="insta" href="#"></a></li>
+      </ul><a class="footer__logo logo" href="/"><img class="logo-img" src="img/logo.png" alt="BarberShop"></a>
+      <button class="feedback-form__input-field submit-button">Записаться</button>
+    </div>
+  </footer>
+</body>

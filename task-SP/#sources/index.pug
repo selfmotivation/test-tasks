@@ -1,0 +1,151 @@
+doctype html
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		link(rel="stylesheet", href="css/reset.css")
+		link(rel="stylesheet", href="css/style-320.css")
+		link(rel="stylesheet", href="css/style-768.css")
+		link(rel="stylesheet", href="css/style-1024.css")
+		title BarberShop
+body
+	header.header.wrapper
+		.header__row
+			a.header__logo.logo(href="/")
+				img.logo-img(src="img/logo.png", alt="BarberShop")
+			nav.header__nav.nav
+				ul.nav-list
+					li.nav-list__item 
+						a(href="#") О нас
+					li.nav-list__item 
+						a(href="#") Услуги и цены
+					li.nav-list__item 
+						a(href="#") Барберы
+					li.nav-list__item 
+						a(href="#") Наши работы
+					li.nav-list__item 
+						a(href="#") Отзывы
+			ul.header__socio-list.socio-list
+				li.socio-list__item
+					a.fb(href="#")
+				li.socio-list__item
+					a.vk(href="#")
+				li.socio-list__item
+					a.insta(href="#")
+		.header__row
+			.work-time
+				p.work-time__first-row График работы
+				p.work-time__second-row С 10:00 до 22:00
+			.slogan.work-time__first-row Нет ничего невозможного
+			.header__contacts.contacts
+				p.contacts__first-row Ул.Декабристов, 54
+				p.contacts__second-row 8 921 38 44 888
+	main.main
+		.promo.wrapper
+			img(src="img/logo.png", alt="Barber Shop").logo-img.promo__logo-img
+			p.promo__description Наши мастера всегда помогут подобрать и сделать именно ту стрижку, которая подчеркнет твою индивидуальность.
+		nav.main__nav.nav
+			ul.nav-list
+				li.nav-list__item 
+					a(href="#") О нас
+				li.nav-list__item 
+					a(href="#") Услуги и цены
+				li.nav-list__item 
+					a(href="#") Барберы
+				li.nav-list__item 
+					a(href="#") Наши работы
+				li.nav-list__item 
+					a(href="#") Отзывы
+		form.feedback-container(action="#")
+			.feedback-container__form.feedback-form.wrapper
+				p.feedback-form__title Оставьте свои данные для обратного звонка
+				p.feedback-form__input
+					label(for="feedback-form__input-field_name").feedback-form__input-label Ваше имя
+					input(type="text" name="name" id="feedback-form__input-field_name").feedback-form__input-field
+				p.feedback-form__input
+					label(for="feedback-form__input-field_tel").feedback-form__input-label Ваш телефон
+					input(type="tel" name="tel" id="feedback-form__input-field_tel").feedback-form__input-field
+				p.feedback-form__input
+					input(type="checkbox" name="agreement" id="feedback-form__input-field_agreement").feedback-form__input-field_agreement
+					label(for="feedback-form__input-field_agreement").feedback-form__input-label
+						| Я соглашаюсь на передачу персональных данных согласно политике конфиденциальности.
+				button(type="submit").feedback-form__input-field.feedback-form__submit-button.submit-button Записаться
+		section.about-us.wrapper
+			article.about-us__paragraph
+				h2.about-us__title.title О нас
+				p.about-us__text.text
+					| Мы ничего не копировали и не стремились ворваться в тренд.
+					br
+					| Мы искренне и увлеченно несли культуру западных барбершопов 
+					br
+					| сперва в Москву, а затем и по всей стране.
+					br
+					| Рисковали, создавали и экспериментировали,
+					br
+					| год от года строя сильнейшую команду барберов.
+			img(src="img/about-img-1.jpg", alt="BarberShop").about-us__image
+			img(src="img/about-img-2.jpg", alt="BarberShop").about-us__image
+			img(src="img/about-img-3.jpg", alt="BarberShop").about-us__image
+		section.services.wrapper
+			h2.services__title.title Услуги и цены
+			ul.services__list
+				img(src="img/logo.png", alt="").services__list-bg
+				li.services__list-item
+					span.services__list-item-name Стрижка
+					span.services__list-item-price 1700 Р
+				li.services__list-item
+					span.services__list-item-name Стрижка машинкой
+					span.services__list-item-price 600 Р
+				li.services__list-item
+					span.services__list-item-name Фейд
+					span.services__list-item-price 1000 Р
+				li.services__list-item
+					span.services__list-item-name Стрижка бороды
+					span.services__list-item-price 600 Р
+				li.services__list-item
+					span.services__list-item-name Моделирование бороды
+					span.services__list-item-price 900 Р
+				li.services__list-item
+					span.services__list-item-name Королевское бритьё
+					span.services__list-item-price 1300 Р
+				li.services__list-item
+					span.services__list-item-name Тонирование бороды
+					span.services__list-item-price 700 Р
+				li.services__list-item
+					span.services__list-item-name Тонирование седины
+					span.services__list-item-price 1300 Р
+				li.services__list-item
+					span.services__list-item-name Удаление волос воском
+					span.services__list-item-price 300 Р
+	footer.footer
+		.wrapper
+			iframe.footer__map.map(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1999.4845455172656!2d30.2840026162198!3d59.924101570233184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469630e699eb1287%3A0x439b72003f98cb2a!2z0YPQuy4g0JTQtdC60LDQsdGA0LjRgdGC0L7QsiwgNTQsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTAxMjE!5e0!3m2!1sru!2sru!4v1596751410403!5m2!1sru!2sru" tabindex="0")
+			.footer__info
+				.footer__work-time.work-time
+					p.work-time__first-row График работы
+					p.work-time__second-row С 10:00 до 22:00
+				.footer__contacts.contacts
+					p.contacts__first-row Ул.Декабристов, 54
+					p.contacts__second-row 8 921 38 44 888
+				nav.footer__nav.nav
+					ul.footer__nav-list.nav-list
+						li.nav-list__item 
+							a(href="#") О нас
+						li.nav-list__item 
+							a(href="#") Услуги и цены
+						li.nav-list__item 
+							a(href="#") Барберы
+						li.nav-list__item 
+							a(href="#") Наши работы
+						li.nav-list__item 
+							a(href="#") Отзывы
+			ul.footer__socio-list.socio-list
+				li.socio-list__item
+					a.fb(href="#")
+				li.socio-list__item
+					a.vk(href="#")
+				li.socio-list__item
+					a.insta(href="#")
+			a.footer__logo.logo(href="/")
+				img.logo-img(src="img/logo.png", alt="BarberShop")
+			button().feedback-form__input-field.submit-button Записаться

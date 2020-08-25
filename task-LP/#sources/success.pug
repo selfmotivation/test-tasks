@@ -1,0 +1,76 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    link(rel="stylesheet", href="css/reset.css")
+    link(rel="stylesheet", href="css/style.css")
+    script(src="js/script.js" defer)
+    title Заказ забора
+body
+  header
+  main.success
+    .header 
+    form(action="mailer.php" method="post").form.form-1
+      h1.header Заказать забор
+      .input-section
+        label(for="width").title Длина забора
+        .input-field
+          input(type="number" min="0" id="width" name="width" placeholder="0" required).input
+          span.meters метров
+      .input-section
+        label(for="height").title Высота забора
+        .input-field
+          input(type="number" min="0" id="height" name="height" placeholder="0" required).input
+          span.meters метров
+      .input-section
+        label(for="material").title Материал забора
+        .input-field
+          .select(data-name="" id="material" required)
+            .select__header
+              .select__current Выберите материал
+              .select__icon
+            .select__body.hidden
+              .select__item(data-value="profnastil") Профнастил 400 Р за м²
+              .select__item(data-value="moduli") Модули 500 Р за м²
+              .select__item(data-value="beton") Бетон 700 Р за м²
+              .select__item(data-value="setka") Сетка 200 Р за м²
+      label(for="montage").montage 
+        input(type="checkbox" id="montage" name="montage").montage-check
+        |  Нужен монтаж
+      p.sum Сумма заказа: 
+        span.price 0 &#8381;
+      button(type="button" disabled).button-next Далее
+
+    //- Вторая страница
+
+    form(action="mailer.php" method="post").form.form-2.hidden
+      a(href="#").link-back Вернуться
+      h1.header Пожалуйста, представьтесь
+      .input-block
+        .input-section
+          label(for="name").title Ваше имя
+          .input-field-2
+            input(type="text" id="name" name="name" required).input
+        .input-section
+          label(for="email").title Электронная почта
+          .input-field-2
+            input(type="email" id="email" name="email" required).input
+        .input-section
+          label(for="tel").title Телефон
+          .input-field-2
+            input(type="tel" id="tel" name="tel" placeholder="+7 (___) ___ - __ - __" pattern="[0-9]").input
+      p.summary.invisible
+        span(class="summary-username")
+        | , вы укомплектовали забор 
+        span(class="summary-width")
+        | и 
+        span(class="summary-height")
+        | из материала 
+        span(class="summary-material")
+        | на сумму 
+        span(class="summary-sum") &#8381;
+      <input type="hidden" name="width-send" id="width-send" value="переменная">
+      <input type="hidden" name="height-send" id="height-send" value="переменная">
+      button(type="button" disabled).button-send отправить
+  footer

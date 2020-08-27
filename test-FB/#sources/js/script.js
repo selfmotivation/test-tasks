@@ -60,11 +60,6 @@ buySubscriptionButton.forEach(function(elem){
 	elem.addEventListener('click', changeSubscriptionByText);
 })
 
-
-// for (let i=0;i<=(foodCards.length-1);i++) {
-// 	foodCards[i].addEventListener('change', changeSubscription);
-// }
-
 // Изменения текста подписи под карточкой
 
 function changeSubscription() {
@@ -107,78 +102,3 @@ function changeSubscriptionByText() {
 }
 
 let foodItems = document.querySelectorAll('.food-item');
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// let foodItems = document.querySelectorAll('.food-item');
-// foodItems.forEach(function(elem) {
-// 	let foodCard = elem.querySelector('.food-card');
-// 	let buySubscriptionButton = elem.querySelector('.food-item__subscription-buy');
-// 	buySubscriptionButton.addEventListener('click', changeCardColor);
-// 	foodCard.addEventListener('click', changeCardColor);
-// 	// foodCard.addEventListener('mouseleave', removeUnhoveredClass);
-// 	// foodCard.addEventListener('mouseenter', changeDescriptionText);
-
-// 	// elem.addEventListener('click', функция для смены надписи)
-// })
-// // Изменение цвета рамки и фона кружка с весом корма
-
-// function changeCardColor() {
-// 		foodCard.classList.toggle('chosen');
-// 		foodCard.classList.toggle('default');
-// 		foodCard.classList.add('current');
-	
-	
-// 	// let cardDescription = this.querySelector('.food-card__description');
-// 	// cardDescription.innerHTML = "Сказочное заморское яство";
-// 	// cardDescription.classList.remove('unchose');
-// }
-
-// Сохранение состояния карточки после клика, "неприменение" :hover
-
-// function removeUnhoveredClass() {
-// 	this.classList.remove('current');
-// 	let cardDescription = this.querySelector('.food-card__description');
-// 	cardDescription.innerHTML = "Сказочное заморское яство";
-// 	cardDescription.classList.remove('unchose');
-// }
-
-// // Изменение верхней подписи на карточке
-
-// function changeDescriptionText() {
-// 	if (this.classList.contains('chosen')) {
-// 		let cardDescription = this.querySelector('.food-card__description');
-// 		cardDescription.innerHTML = "Котэ не одобряет?";
-// 		cardDescription.classList.add('unchose');
-// 	}
-// }
-
-// let chosenFoodCards = document.querySelectorAll('.chosen');
-// chosenFoodCards.forEach(function(elem){
-// 	elem.addEventListener('mouseenter', changeDescriptionText);
-// 	elem.addEventListener('mouseleave', removeUnhoveredClass);
-// });
-
-
-
-
-
